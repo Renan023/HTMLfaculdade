@@ -15,9 +15,8 @@ html, body{
     font-style: italic;
 }
 
-.value {
-    margin-top: 10px;
-    text-align: justify;
+#p{
+    text-shadow: 5px 5px 5px white;
 }
 
 input {

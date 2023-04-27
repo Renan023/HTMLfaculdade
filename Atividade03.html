@@ -10,6 +10,7 @@
         rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
         crossorigin="anonymous">
         <link rel="stylesheet" href="CSS/estilo.css" type="text/css"/>
+        <script src="Javascript/index.js"> </script>
 </head>
 
     <body>
@@ -21,25 +22,17 @@
         </nav>
 
         <div class="inicio">
-            <script>
-                window.alert('Olá, vamos fazer a atividade 03')//alerta
-                window.confirm('Vamos sim?')//confirmação
-                var nome = window.prompt('Qual seu nome?')//string guardada na variavel
-                window.alert(`Muito prazer, ${nome}`)//concatenação
-            </script>
             <h1>Operações Aritméticas</h1>
         </div><!--inicio-->
 
         <div class="bg">
-            <p>Vamos começar a fazer os cálculos aritméticos</p>
-            <div class="value">
-                <script class="perg">
-                    document.writeln(`<h4>${nome}.</h4><strong>Gostaria de utilizar qual valor?</strong><br>`) 
-                </script>
-                  
+            <p >Vamos começar a fazer os cálculos aritméticos</p>
+
+            <div id="value">
+                <p id="p"><b>Qual valor gostaria de indicar?</b></p>     
                 <input type="number" id="txtn1"><!--input dos valores-->
                 <input type="number" id="txtn2"><!--input dos valores-->
-
+            </div><!--value-->
                 <div id="op">
                     <input type="submit" value="Somar" onclick="somar()">
                     <input type="submit" value="Subtrair" onclick="subtrair()">
@@ -49,60 +42,6 @@
                 </div><!--op-->
 
                 <div id="res">Resultado das operações básicas</div><!--res-->
-
-                <script>
-
-                    function somar(){
-                        var txt1 = document.getElementById('txtn1')
-                        var txt2 = document.getElementById('txtn2')
-                        var res = document.getElementById('res')
-                        var v1 = Number(txt1.value)
-                        var v2 = Number(txt2.value)
-                        var s = v1+v2
-                        res.innerHTML = `A soma dos valores é ${s}.`
-                    }
-
-                function subtrair(){
-                        var txt1 = document.getElementById('txtn1')
-                        var txt2 = document.getElementById('txtn2')
-                        var res = document.getElementById('res')
-                        var v1 = Number(txt1.value)
-                        var v2 = Number(txt2.value)
-                        var sb = v1-v2
-                        res.innerHTML = `A subtração dos valores é ${sb}.`
-                }
-
-                function multiplicar (){
-                        var txt1 = document.getElementById('txtn1')
-                        var txt2 = document.getElementById('txtn2')
-                        var res = document.getElementById('res')
-                        var v1 = Number(txt1.value)
-                        var v2 = Number(txt2.value)
-                        var m = v1*v2
-                        res.innerHTML = `A multiplicação dos valores é ${m}.`
-                }
-
-                function dividir(){
-                        var txt1 = document.getElementById('txtn1')
-                        var txt2 = document.getElementById('txtn2')
-                        var res = document.getElementById('res')
-                        var v1 = Number(txt1.value)
-                        var v2 = Number(txt2.value)
-                        var d = v1/v2
-                        res.innerHTML = `A divisão dos valores é ${d}.`
-                }
-
-                function potencia (){
-                        var txt1 = document.getElementById('txtn1')
-                        var txt2 = document.getElementById('txtn2')
-                        var res = document.getElementById('res')
-                        var v1 = Number(txt1.value)
-                        var v2 = Number(txt2.value)
-                        var pot = Math.pow(v1,v2)
-                        res.innerHTML = `A potência dos valores é ${pot}.`             
-                    }
-
-                </script>
                 
                 <input type="number" id='txtn3'><!--input do valor-->
 
@@ -113,34 +52,6 @@
                 </div><!--op-->
 
                 <div id="resd">Resultado de outras operações aritméticas</div><!--resd-->
-
-                <script>
-
-                    function raiz (){
-                        var txt3 = document.querySelector('input#txtn3')
-                        var res = document.getElementById('resd')
-                        var v3 = Number(txt3.value)
-                        var rq = Math.sqrt(v3)
-                        res.innerHTML = `A raiz quadrada do valor é ${rq}.`             
-                   }
-
-                    function cosseno(){
-                        var txt3 =document.getElementById('txtn3')
-                        var res = document.getElementById('resd')
-                        var v3 = Number(txt3.value)
-                        var cs = Math.cos(v3)
-                        res.innerHTML = `O cosseno do valor é ${cs}.`
-                    }
-
-                    function seno (){
-                        var txt3 = document.getElementById('txtn3')
-                        var res = document.getElementById('resd')
-                        var v3 = Number(txt3.value)
-                        var sn = Math.sin(v3)
-                        res.innerHTML = `O seno do valor é ${sn}.`
-                    }
-
-                </script>
 
                 <input type="number" id="txtn4"><!--input do valor-->
                 <input type="number" id="txtn5"><!--input do valor-->
@@ -153,33 +64,6 @@
 
                 <div id="resm">Máximo e Mínimo</div>
 
-                <script>
-
-                    function maxima(){
-                        var txt4 = document.getElementById('txtn4')
-                        var txt5 = document.getElementById('txtn5')
-                        var txt6 = document.getElementById('txtn6')
-                        var res = document.getElementById('resm')
-                        var v4 = Number(txt4.value)
-                        var v5 = Number(txt5.value)
-                        var v6 = Number(txt6.value)
-                        var mx = Math.max(v4,v5,v6)
-                        res.innerHTML = `A Máxima dos valores é ${mx}.`
-                    }
-
-                    function minima (){
-                        var txt4 = document.getElementById('txtn4')
-                        var txt5 = document.getElementById('txtn5')
-                        var txt6 = document.getElementById('txtn6')
-                        var res = document.getElementById('resm')
-                        var v4 = Number(txt4.value)
-                        var v5 = Number(txt5.value)
-                        var v6 = Number(txt6.value)
-                        var mn = Math.min(v4,v5,v6)
-                        res.innerHTML = `A Mínima dos valores é ${mn}.`
-                    }
-                </script>
-            </div><!--value-->
 
         </div><!--bg-->
 
