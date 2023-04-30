@@ -2,6 +2,27 @@ window.alert('Olá, vamos fazer a atividade 03')//alerta
 var nome = window.prompt('Qual seu nome?')//string guardada na variavel
 window.alert(`Muito prazer, ${nome}`)//concatenação
 
+document.getElementById('p').innerHTML = `<b>${nome}</b>,<br>Vamos praticar` 
+
+function mtn() {
+    var time = document.getElementById('time')
+    var date = new Date()
+    var hours = 23
+    var min = date.getMinutes()
+    var dia = date.getDate() 
+    var month = date.getMonth()
+    var year = date.getFullYear()
+    time.innerHTML = `Dia ${dia}/${month}/${year}<br>Hora ${hours}:${min}`
+    if (hours > 0 && hours <12){
+        document.body.style.background = `#dee376`
+    }else if ( hours >12 && hours<19){
+        document.body.style.background = `#f5b942`
+    }else {
+        document.body.style.background = `#4682b4`
+    }
+
+}
+
 function somar(){
     var txt1 = document.getElementById('txtn1')
     var txt2 = document.getElementById('txtn2')
