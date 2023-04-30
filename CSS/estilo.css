@@ -1,6 +1,5 @@
 html, body{
     height: 100%;
-    background-color: steelblue;
 }
 
 .inicio h1{
@@ -40,6 +39,17 @@ input {
 
 #resm{
     margin-top: 5px;
+    text-shadow: 5px 5px 5px white;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#p {
+    text-align: left;
+    font-size: 15pt;
+}
+
+#time{
     text-shadow: 5px 5px 5px white;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
