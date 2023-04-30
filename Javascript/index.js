@@ -7,10 +7,10 @@ document.getElementById('p').innerHTML = `<b>${nome}</b>,<br>Vamos praticar`
 function mtn() {
     var time = document.getElementById('time')
     var date = new Date()
-    var hours = 23
+    var hours = date.getHours()
     var min = date.getMinutes()
     var dia = date.getDate() 
-    var month = date.getMonth()
+    var month = date.getMonth()+1
     var year = date.getFullYear()
     time.innerHTML = `Dia ${dia}/${month}/${year}<br>Hora ${hours}:${min}`
     if (hours > 0 && hours <12){
