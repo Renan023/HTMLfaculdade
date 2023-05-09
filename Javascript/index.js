@@ -120,3 +120,22 @@ function minima (){
     var mn = Math.min(v4,v5,v6)
     res.innerHTML = `A Mínima dos valores é ${mn}.`
 }
+
+function equacao (){
+    var txt4 = document.getElementById('txtn4')
+    var txt5 = document.getElementById('txtn5')
+    var txt6 = document.getElementById('txtn6')
+    var res = document.getElementById('resm')
+    var a = Number(txt4.value)
+    var b = Number(txt5.value)
+    var c = Number(txt6.value)
+    var delta = Math.pow(b,2) - 4*a*c
+    var x1 = Math.sqrt(delta)
+    var x1 = -b + x1
+    var x1 = x1/(2*a)
+    var x2 = Math.sqrt(delta)
+    var x2 = -b - x2
+    var x2 = x2/(2*a)
+    res.innerHTML = `O resultado da equação de segundo grau e x1 = ${x1} e x2 = ${x2}`
+
+}
