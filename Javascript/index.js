@@ -1,17 +1,17 @@
 window.alert('Olá, vamos fazer a atividade 03')//alerta
-var nome = window.prompt('Qual seu nome?')//string guardada na variavel
+var nome = window.prompt('Qual seu nome? ')//string guardada na variavel
 window.alert(`Muito prazer, ${nome}`)//concatenação
 
-document.getElementById('p').innerHTML = `<b>${nome}</b>,<br>Vamos praticar` 
+document.getElementById('p').innerHTML = `${nome},<br>Vamos praticar` 
 
 function mtn() {
-    var time = document.getElementById('time')
-    var date = new Date()
-    var hours = date.getHours()
-    var min = date.getMinutes()
-    var dia = date.getDate() 
-    var month = date.getMonth()+1
-    var year = date.getFullYear()
+    let time = document.getElementById('time')
+    let date = new Date()
+    let hours = date.getHours()
+    let min = date.getMinutes()
+    let dia = date.getDate() 
+    let month = date.getMonth()+1
+    let year = date.getFullYear()
     time.innerHTML = `Dia ${dia}/${month}/${year}<br>Hora ${hours}:${min}`
     if (hours > 0 && hours <12){
         document.body.style.background = `#dee376`
@@ -24,112 +24,123 @@ function mtn() {
 }
 
 function somar(){
-    var txt1 = document.getElementById('txtn1')
-    var txt2 = document.getElementById('txtn2')
-    var res = document.getElementById('res')
-    var v1 = Number(txt1.value)
-    var v2 = Number(txt2.value)
-    var s = v1+v2
+    let txt1 = document.getElementById('txtn1')
+    let txt2 = document.getElementById('txtn2')
+    let res = document.getElementById('res')
+    let v1 = Number(txt1.value)
+    let v2 = Number(txt2.value)
+    let s = v1+v2
     res.innerHTML = `A soma dos valores é ${s}.`
 }
 
 function subtrair(){
-    var txt1 = document.getElementById('txtn1')
-    var txt2 = document.getElementById('txtn2')
-    var res = document.getElementById('res')
-    var v1 = Number(txt1.value)
-    var v2 = Number(txt2.value)
-    var sb = v1-v2
+    let txt1 = document.getElementById('txtn1')
+    let txt2 = document.getElementById('txtn2')
+    let res = document.getElementById('res')
+    let v1 = Number(txt1.value)
+    let v2 = Number(txt2.value)
+    let sb = v1-v2
     res.innerHTML = `A subtração dos valores é ${sb}.`
 }
 
 function multiplicar (){
-    var txt1 = document.getElementById('txtn1')
-    var txt2 = document.getElementById('txtn2')
-    var res = document.getElementById('res')
-    var v1 = Number(txt1.value)
-    var v2 = Number(txt2.value)
-    var m = v1*v2
+    let txt1 = document.getElementById('txtn1')
+    let txt2 = document.getElementById('txtn2')
+    let res = document.getElementById('res')
+    let v1 = Number(txt1.value)
+    let v2 = Number(txt2.value)
+    let m = v1*v2
     res.innerHTML = `A multiplicação dos valores é ${m}.`
 }
 
 function dividir(){
-    var txt1 = document.getElementById('txtn1')
-    var txt2 = document.getElementById('txtn2')
-    var res = document.getElementById('res')
-    var v1 = Number(txt1.value)
-    var v2 = Number(txt2.value)
-    var d = v1/v2
+    let txt1 = document.getElementById('txtn1')
+    let txt2 = document.getElementById('txtn2')
+    let res = document.getElementById('res')
+    let v1 = Number(txt1.value)
+    let v2 = Number(txt2.value)
+    let d = v1/v2
     res.innerHTML = `A divisão dos valores é ${d}.`
 }
 
 function potencia (){
-    var txt1 = document.getElementById('txtn1')
-    var txt2 = document.getElementById('txtn2')
-    var res = document.getElementById('res')
-    var v1 = Number(txt1.value)
-    var v2 = Number(txt2.value)
-    var pot = Math.pow(v1,v2)
+    let txt1 = document.getElementById('txtn1')
+    let txt2 = document.getElementById('txtn2')
+    let res = document.getElementById('res')
+    let v1 = Number(txt1.value)
+    let v2 = Number(txt2.value)
+    let pot = Math.pow(v1,v2)
     res.innerHTML = `A potência dos valores é ${pot}.`             
 }
 
 function raiz (){
-    var txt3 = document.querySelector('input#txtn3')
-    var res = document.getElementById('resd')
-    var v3 = Number(txt3.value)
-    var rq = Math.sqrt(v3)
+    let txt3 = document.querySelector('input#txtn3')
+    let res = document.getElementById('resd')
+    let v3 = Number(txt3.value)
+    let rq = Math.sqrt(v3)
     res.innerHTML = `A raiz quadrada do valor é ${rq}.`             
 }
 
 function cosseno(){
-    var txt3 =document.getElementById('txtn3')
-    var res = document.getElementById('resd')
-    var v3 = Number(txt3.value)
-    var cs = Math.cos(v3)
+    let txt3 =document.getElementById('txtn3')
+    let res = document.getElementById('resd')
+    let v3 = Number(txt3.value)
+    let cs = Math.cos(v3)
     res.innerHTML = `O cosseno do valor é ${cs}.`
 }
 
 function seno (){
-    var txt3 = document.getElementById('txtn3')
-    var res = document.getElementById('resd')
-    var v3 = Number(txt3.value)
-    var sn = Math.sin(v3)
+    let txt3 = document.getElementById('txtn3')
+    let res = document.getElementById('resd')
+    let v3 = Number(txt3.value)
+    let sn = Math.sin(v3)
     res.innerHTML = `O seno do valor é ${sn}.`
 }
 
+function fatorial (){
+    let txt3 = document.getElementById(`txtn3`)
+    let res = document.getElementById(`resd`)
+    let v3 = Number(txt3.value)
+    let resultado = v3
+        for (let i = 1; i < v3;i++){
+            resultado*=i;
+        }
+        res.innerHTML = `O resultado do fatorial é ${resultado}`
+    }
+
 function maxima(){
-    var txt4 = document.getElementById('txtn4')
-    var txt5 = document.getElementById('txtn5')
-    var txt6 = document.getElementById('txtn6')
-    var res = document.getElementById('resm')
-    var v4 = Number(txt4.value)
-    var v5 = Number(txt5.value)
-    var v6 = Number(txt6.value)
-    var mx = Math.max(v4,v5,v6)
+    let txt4 = document.getElementById('txtn4')
+    let txt5 = document.getElementById('txtn5')
+    let txt6 = document.getElementById('txtn6')
+    let res = document.getElementById('resm')
+    let v4 = Number(txt4.value)
+    let v5 = Number(txt5.value)
+    let v6 = Number(txt6.value)
+    let mx = Math.max(v4,v5,v6)
     res.innerHTML = `A Máxima dos valores é ${mx}.`
 }
 
 function minima (){
-    var txt4 = document.getElementById('txtn4')
-    var txt5 = document.getElementById('txtn5')
-    var txt6 = document.getElementById('txtn6')
-    var res = document.getElementById('resm')
-    var v4 = Number(txt4.value)
-    var v5 = Number(txt5.value)
-    var v6 = Number(txt6.value)
-    var mn = Math.min(v4,v5,v6)
+    let txt4 = document.getElementById('txtn4')
+    let txt5 = document.getElementById('txtn5')
+    let txt6 = document.getElementById('txtn6')
+    let res = document.getElementById('resm')
+    let v4 = Number(txt4.value)
+    let v5 = Number(txt5.value)
+    let v6 = Number(txt6.value)
+    let mn = Math.min(v4,v5,v6)
     res.innerHTML = `A Mínima dos valores é ${mn}.`
 }
 
 function equacao (){
-    var txt4 = document.getElementById('txtn4')
-    var txt5 = document.getElementById('txtn5')
-    var txt6 = document.getElementById('txtn6')
-    var res = document.getElementById('resm')
-    var a = Number(txt4.value)
-    var b = Number(txt5.value)
-    var c = Number(txt6.value)
-    var delta = Math.pow(b,2) - 4*a*c
+    let txt4 = document.getElementById('txtn4')
+    let txt5 = document.getElementById('txtn5')
+    let txt6 = document.getElementById('txtn6')
+    let res = document.getElementById('resm')
+    let a = Number(txt4.value)
+    let b = Number(txt5.value)
+    let c = Number(txt6.value)
+    let delta = Math.pow(b,2) - 4*a*c
     var x1 = Math.sqrt(delta)
     var x1 = -b + x1
     var x1 = x1/(2*a)
@@ -137,5 +148,20 @@ function equacao (){
     var x2 = -b - x2
     var x2 = x2/(2*a)
     res.innerHTML = `O resultado da equação de segundo grau e x1 = ${x1} e x2 = ${x2}`
+}
 
+function tabuada () {
+    let txt7 = document.getElementById(`txtn7`)
+    let res = document.getElementById(`tab`)
+    let c = 1
+    let v7 = Number(txt7.value)
+    res.innerHTML =``
+    while (c <= 10){
+        let item = document.createElement('option')
+        item.innerHTML = `${v7} x ${c} = ${v7*c}`
+        res.value = `res${c}`
+        res.appendChild(item)
+        c++
+
+    }
 }
