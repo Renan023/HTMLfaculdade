@@ -12,3 +12,6 @@ HTML foi incluido a função mtn(manhã, tarde e noite).Css estilizado a funçã
 
 08/05/23
 HTML incluido a equação de segundo grau. CSS arredondado o input. Javascript a função equação de segundo grau
+
+14/05/23
+Inclusão de operações como fatorial e tabuada, porém a tabuada é mostrado o resultado em um select e suas devidas estilizações
