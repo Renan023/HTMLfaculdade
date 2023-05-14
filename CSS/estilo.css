@@ -1,5 +1,6 @@
 html, body{
     height: 100%;
+    width: 100%;
 }
 
 .inicio h1{
@@ -15,6 +16,7 @@ html, body{
 }
 
 #p{
+    font-weight: bold;
     text-shadow: 5px 5px 5px white;
 }
 
@@ -54,4 +56,15 @@ input {
     text-shadow: 5px 5px 5px white;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#tab{
+    margin-top: 20px;
+    border-radius: 2px;
+}
+
+#num {
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 5px 5px 5px gray;
 }
