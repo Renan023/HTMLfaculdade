@@ -30,11 +30,13 @@
         <div class="bg">
             <p >Vamos começar a fazer os cálculos aritméticos</p>
 
-            <div id="value">
-                <p id="p"></b></p>     
+            <div id="saudacoes">
+                <p id="p"></b></p>  
+            </div><!--saudacoes-->   
+
                 <input type="number" id="txtn1"><!--input dos valores-->
                 <input type="number" id="txtn2"><!--input dos valores-->
-            </div><!--value-->
+            
                 <div id="op">
                     <input type="submit" value="Somar" onclick="somar()">
                     <input type="submit" value="Subtrair" onclick="subtrair()">
@@ -51,6 +53,7 @@
                     <input type="submit" value="Raiz²" onclick="raiz()">
                     <input type="submit" value="cosseno" onclick="cosseno()">
                     <input type="submit" value="Seno" onclick="seno()">
+                    <input type="submit" value="Fatorial" onclick="fatorial()">
                 </div><!--op-->
 
                 <div id="resd">Resultado de outras operações aritméticas</div><!--resd-->
@@ -65,8 +68,19 @@
                     <input type="submit" value="equação seg" onclick="equacao()">
                 </div><!--op-->
 
-                <div id="resm">Máximo, Mínimo Equação 2º grau</div>
+                <div id="resm">Máximo, Mínimo e Equação 2º grau</div>
+                
+                <input type="number" id="txtn7">
 
+                <div id="op">
+                    <input type="submit" value="Tabuada" onclick="tabuada()">
+                </div>
+
+                <div>
+                    <select name="tabuada" id="tab" size="10">
+                        <option id="num">Insira um valor </option>
+                    </select><!--tab-->
+                </div>
                 
         </div><!--bg-->
     
