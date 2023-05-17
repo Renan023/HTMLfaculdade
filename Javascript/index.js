@@ -4,6 +4,12 @@ window.alert(`Muito prazer, ${nome}`)//concatenação
 
 document.getElementById('p').innerHTML = `${nome},<br>Vamos praticar` 
 
+const main = document.querySelectorAll(`.title`)[0];
+
+setTimeout(()=>{
+    main.classList.add('principal');
+},1000);
+
 function mtn() {
     let time = document.getElementById('time')
     let date = new Date()
@@ -158,7 +164,7 @@ function tabuada () {
     res.innerHTML =``
     while (c <= 10){
         let item = document.createElement('option')
-        item.innerHTML = `${v7} x ${c} = ${v7*c}`
+        item.innerHTML = `${v7} x ${c} =  ${v7*c}`
         res.value = `res${c}`
         res.appendChild(item)
         c++
