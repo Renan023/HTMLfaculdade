@@ -3,10 +3,14 @@ html, body{
     width: 100%;
 }
 
-.inicio h1{
-    text-align: center;
-    font-family:fantasy;
+.principal {
+    transition: 20s;
     text-shadow: 10px 10px 10px white;
+}
+
+.inicio h1{
+    font-family:fantasy;
+    text-align: center;
 }
 
 .bg p {
@@ -18,38 +22,22 @@ html, body{
 #p{
     font-weight: bold;
     text-shadow: 5px 5px 5px white;
+    text-align: left;
+    font-size: 15pt;
 }
 
 input {
     width: 100px;
     margin-top: 20px;
     border-radius: 10px;
+    cursor: pointer;
 }
 
-#res{
+.resultado {
     margin-top: 5px;
     text-shadow: 5px 5px 5px white;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-#resd {
-    margin-top: 5px;
-    text-shadow: 5px 5px 5px white;
-    font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-#resm{
-    margin-top: 5px;
-    text-shadow: 5px 5px 5px white;
-    font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-#p {
-    text-align: left;
-    font-size: 15pt;
 }
 
 #time{
