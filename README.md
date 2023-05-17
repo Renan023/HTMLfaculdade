@@ -15,3 +15,6 @@ HTML incluido a equação de segundo grau. CSS arredondado o input. Javascript a
 
 14/05/23
 Inclusão de operações como fatorial e tabuada, porém a tabuada é mostrado o resultado em um select e suas devidas estilizações
+
+16/05/23
+Inserido animação de transição no título e cursor- pointer
